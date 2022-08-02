@@ -1,0 +1,23 @@
+.input {
+
+  &--big-search {
+    padding: 5px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    text-align: center;
+    @include style-outside;
+    color: $primary;
+    font-weight: bold;
+    font-size: 30px;
+
+    &::placeholder {
+      color: $primary-light;
+    }
+
+    &:focus {
+      @include style-inside;
+    }
+  }
+}

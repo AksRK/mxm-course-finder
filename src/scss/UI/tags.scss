@@ -1,0 +1,13 @@
+.tags-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+
+  &__item {
+    padding: 5px 15px;
+    border-radius: 20px;
+    @include style-outside;
+    color: $primary;
+  }
+}

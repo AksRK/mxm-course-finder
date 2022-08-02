@@ -1,0 +1,23 @@
+.button {
+  box-sizing: border-box;
+  padding: 6px 25px;
+  font-size: 25px;
+  border-radius: 15px;
+  border: none;
+  color: $secondaryDark;
+  @include style-outside;
+  transition: 0.5s;
+
+  &:hover {
+    background: $primary-light;
+    color: $white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  &:active {
+    @include style-inside;
+    color: $secondaryDark;
+    transition: 0.1s;
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 100px;
+  padding: 10px 15px;
+  min-height: 80px;
+  @include style-outside;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: $secondaryDark;
+
+  &__item {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & a {
+    color: $primary-dark;
+    &:hover {
+      padding-bottom: 3px;
+      border-bottom: 1px solid $primary-dark;
+    }
+  }
+
+}

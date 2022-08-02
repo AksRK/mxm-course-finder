@@ -1,0 +1,26 @@
+$primary-light: #8abdff;
+$primary: #6d5dfc;
+$primary-dark: #5b0eeb;
+
+$white: #FFFFFF;
+$orange: #ff9400;
+
+$secondary-1: #E4EBF5;
+$secondary-2: #c8d0e7;
+$secondary-3: #bec8e4;
+$secondaryDark: #9baacf;
+
+@mixin style-outside {
+  background-color: $secondary-1;
+  box-shadow:  .3rem .3rem .6rem $secondary-2, -.2rem -.2rem .5rem $white;
+}
+
+@mixin style-inside {
+  background-color: $secondary-1;
+  box-shadow: inset .2rem .2rem .5rem $secondary-2, inset -.2rem -.2rem .5rem $white;
+}
+
+@mixin btn-inside {
+  background: $primary;
+  box-shadow:inset .2rem .2rem 1rem $primary-light, inset -.2rem -.2rem 1rem $primary-dark;
+}
